@@ -1,6 +1,4 @@
-
-
-<h1>AgenciaGruppo4:</h1>
+<h1>AgenciaGrupo4:</h1>
 <h2>Equipo:</h2>
     <ul>
         <li>Sergio Fernandez</li>
