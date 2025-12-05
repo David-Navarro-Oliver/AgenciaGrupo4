@@ -1,13 +1,19 @@
-footer{
+footer {
     background-color: blue;
-    color:aquamarine;
+    color: aquamarine;
     border-color: darkblue;
     border-width: 1px;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
 }
-footer a{
-    color:aqua;
+footer a {
+    color: aqua;
 }
-ul{
+ul {
     list-style-type: none;
+}
+section {
+    width: 33%;
 }
