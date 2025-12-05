@@ -3,7 +3,11 @@ footer{
     color:aquamarine;
     border-color: darkblue;
     border-width: 1px;
+    text-align: center;
 }
 footer a{
     color:aqua;
+}
+ul{
+    list-style-type: none;
 }
