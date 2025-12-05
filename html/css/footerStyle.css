@@ -1,4 +1,9 @@
 footer{
     background-color: blue;
     color:aquamarine;
+    border-color: darkblue;
+    border-width: 1px;
+}
+footer a{
+    color:aqua;
 }
