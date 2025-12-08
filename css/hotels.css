@@ -92,16 +92,30 @@
 }
 
 nav {
+    width: 80%;
     display: inline-flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     margin: 30px 30px 0px 30px;
 }
 
 .navElement {
-    background-color: lightcoral;
-    padding: 10px;
+    background-color: rgba(240, 128, 128, 0.2);
+    padding: 5px;
     margin: 5px;
-    
+    border: solid 1px lightgray;
+    border-bottom: solid 3px blue;
+    cursor: pointer;
+}
+
+.navElement.main {
+    background-color: rgba(255, 24, 24, 0.4);
+    cursor: default;
+}
+
+.navElement.text {
+    font-size: 9pt;
+    background-color: rgba(255, 24, 24, 0.4);
+    cursor: default;
 }
 
 * {
@@ -113,7 +127,11 @@ nav {
     top: 50vh;
     left: 40vw;
     text-align: center;
-    background-color: red;
+    background-color: rgba(60, 179, 114, 0.8);
     padding: 20px;
     border-radius: 20px;
+}
+
+.icons {
+    height: 20px;
 }

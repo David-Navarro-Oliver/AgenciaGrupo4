@@ -1,9 +1,11 @@
-let filepath = "../json/hotels.json";
-let filepathImages = "../media/images/hotels";
+/*/ SCRIPT FOR HOTELS WEBPAGE /*/
+/*/ VARIABLES /*/
+let jsonFilePath = "../json/hotels.json";
+let jsonFilePathImages = "../media/images/hotels";
 let node = document.getElementById("hotelCards");
 
 function loadJson() {
-    fetch(filepath)
+    fetch(jsonFilePath)
         .then(response => response.json())
         .then(data => displayData(data))
 }
@@ -13,49 +15,11 @@ function displayData(json) {
     node.innerHTML = content;
 }
 
-function loadJsonSort() {
-    fetch(filepath)
-        .then(response => response.json())
-        .then(data => sort(data))
-}
-
-function sort(data) {
-    let sort = data.hotels.sort((a, b) => {
-        return parseInt(a.price.offer) - parseInt(b.price.offer);
-    });
-
-    let result = { "hotels": sort };
-
-    //console.log(json);
-    //console.log(result);
-
-    setTimer('precio');
-    setTimeout(function () {
-        displayData(result);
-        removeAlerts();
-    }, 2000);
-    //displayData(result);
-}
-
-function removeAlerts() {
-    document.getElementsByClassName("message")[0].remove();
-}
-function setTimer(filter) {
-    let body = document.getElementsByTagName("body")[0];
-    let node = document.createElement("p");
-    node.classList.add("message");
-    node.innerHTML = `
-        Ordenando tarjetas por ${filter}...
-    `
-    body.appendChild(node);
-
-}
-
 function createHotelCards({ id, name, country, city, category, rating, userRating, countRating, locationDescription, tags, price, image }) {
     return `
     <div class="card">
         <div>
-            <img class="hotelImage" src=${filepathImages}/${image}>
+            <img class="hotelImage" src=${jsonFilePathImages}/${image}>
         </div>
         <div>
             <p class="hotelName">${name}</p>
@@ -85,6 +49,53 @@ function createHotelCards({ id, name, country, city, category, rating, userRatin
 }
 
 loadJson();
+
+/*/ CARDS MANAGEMENT /*/
+
+function jsonSortingCards(filter) {
+    fetch(jsonFilePath)
+        .then(response => response.json())
+        .then(json => sort(json, filter))
+}
+
+function sort(jsonData, filter) {
+    let sortCards = jsonData.hotels.sort((a, b) => {
+        if (filter == 'precio')
+            return parseInt(a.price.offer) - parseInt(b.price.offer);
+        else if (filter == 'ciudad')
+            return a.city > b.city ? 1 : -1;
+        else if(filter == 'puntuacion')
+            return a.rating - b.rating;
+        else if(filter == 'comentarios')
+            return a.countRating - b.countRating;
+        else if(filter == 'categoria')
+            return a.category.length - b.category.length;
+    });
+
+    let result = { "hotels": sortCards };
+
+    displayMessage(filter);
+    setTimeout(function () {
+        displayData(result);
+        removeAlerts();
+    }, 2000);
+}
+
+function displayMessage(filter) {
+    let body = document.getElementsByTagName("body")[0];
+    let node = document.createElement("p");
+    node.classList.add("message");
+    node.innerHTML = `
+        Ordenando tarjetas por ${filter}...
+    `
+    body.appendChild(node);
+}
+
+function removeAlerts() {
+    document.getElementsByClassName("message")[0].remove();
+}
+
+/*/ IMPORTING HEADER.HTML FILE /*/
 
 let URLHeader = "header.html";
 
