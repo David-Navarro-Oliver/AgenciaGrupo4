@@ -1,0 +1,43 @@
+{
+    "contact": [
+        {
+            "id": 0,
+            "department": "Informacion Vertice",
+            "responsible": "Tony Jiménez",
+            "opening": "Lunes a Viernes, de 9 a 17",
+            "city": "Alicante",
+            "address": "Calle Gravina, nº12 Etlo B",
+            "image": {
+                "path": "map1.png",
+                "alt": "imagen de mapa Alicante",
+                "title": "Alicante"
+            }
+        },
+        {
+            "id": 1,
+            "department": "Agencia de seguros Vertice",
+            "responsible": "Andrea Perlini",
+            "opening": "Lunes a Jueves, de 9 a 13",
+            "city": "Barcelona",
+            "address": "Calle Aragon, nº 43, 1ªB",
+            "image": {
+                "path": "map2.png",
+                "alt": "imagen de mapa Barcelona",
+                "title": "Barcelona"
+            }
+        },
+        {
+            "id": 2,
+            "department": "Viajes organizados Vertice",
+            "responsible": "Alejandra Gómez",
+            "opening": "Lunes a Viernes, de 9 a 17",
+            "city": "Ourense",
+            "address": "Calle Cardenal Quevedo, pasaje 3, 1ºE",
+            "image": {
+                "path": "map3.png",
+                "alt": "imagen de mapa Ourense",
+                "title": "Ourense"
+            }
+        }
+    ]
+}
