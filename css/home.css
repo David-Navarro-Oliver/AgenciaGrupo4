@@ -110,3 +110,89 @@ main {
 .hero-cta-button:hover {
   background: rgba(230, 179, 92, 0.16);
 }
+.memories-section {
+  background: #f6f4f0;
+  padding: 7rem 0 25rem;
+}
+
+.memories-layout {
+  width: min(1200px, 92%);
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 4rem;
+  position: relative;
+}
+
+.memories-mainPhoto {
+  position: relative;
+  flex: 0 0 52%;
+  max-width: 560px;
+  box-shadow: 0 26px 70px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+  transform: translateX(-1.5rem);
+}
+
+.memories-mainPhoto img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0;
+}
+
+.memories-overlayPhoto {
+  position: absolute;
+  width: 72%;
+  left: 35%;
+  bottom: -50%;
+  box-shadow: 0 22px 55px rgba(0, 0, 0, 0.42);
+  border-radius: 0;
+  z-index: 1;
+}
+
+.memories-textColumn {
+  flex: 1;
+  padding-top: 2.2rem;
+}
+
+.memories-eyebrow {
+  font-size: 0.85rem;
+  color: var(--color-accent);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.memories-title {
+  font-family: "Georgia", "Times New Roman", serif;
+  font-size: clamp(2rem, 3vw, 3rem);
+  line-height: 1.25;
+  margin-bottom: 3rem;
+  color: var(--color-text-main);
+}
+
+.memories-text {
+  font-size: 1rem;
+  color: var(--color-text-soft);
+  line-height: 1.65;
+  max-width: 540px;
+  margin-bottom: 1.8rem;
+}
+
+.memories-cta {
+  display: inline-block;
+  margin-top: 1.6rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-text-main);
+  text-decoration: none;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid var(--color-text-main);
+  transition: 0.25s ease;
+}
+
+.memories-cta:hover {
+  color: var(--color-accent);
+  border-bottom-color: var(--color-accent);
+}
