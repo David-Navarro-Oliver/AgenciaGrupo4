@@ -141,3 +141,141 @@ document.addEventListener("DOMContentLoaded", () => {
       baseImage.style.transform = "scale(1.02) rotateX(0deg) rotateY(0deg)";
     });
   }
+
+  const cruiseData = [
+    {
+      key: "fiordos",
+      image: "../media/images/fiordos.jpg",
+      alt: "Fiordo noruego con montañas nevadas",
+      title: "Fiordos Noruegos",
+      meta: "7 noches · salida desde Copenhague",
+      text: "Ruta: Copenhague · Bergen · Geiranger · Hellesylt · Stavanger. Montañas infinitas, cascadas gigantes y una navegación única entre cañones naturales de hielo y roca.",
+    },
+
+    {
+      key: "inglaterra",
+      image: "../media/images/inglaterra.jpg",
+      alt: "Acantilados de la costa inglesa",
+      title: "Inglaterra Atlántica",
+      meta: "5 noches · salida desde Bilbao",
+      text: "Ruta: Southampton · Plymouth · Falmouth. Acantilados imponentes, faros históricos y puertos llenos de tradición marinera.",
+    },
+
+    {
+      key: "francia",
+      image: "../media/images/francia.jpg",
+      alt: "Puerto en la costa francesa",
+      title: "Costa Mediterránea Francesa",
+      meta: "6 noches · salida desde Barcelona",
+      text: "Ruta: Marsella · Toulon · Niza · Cannes. Calas de agua turquesa, paseos marítimos y puertos llenos de vida.",
+    },
+
+    {
+      key: "cerdena",
+      image: "../media/images/cerdena.jpg",
+      alt: "Playa de arena blanca en Cerdeña",
+      title: "Esencias de Cerdeña",
+      meta: "7 noches · salida desde Barcelona",
+      text: "Ruta: Olbia · Cagliari · Alghero · Costa Esmeralda. Aguas cristalinas y pueblos costeros llenos de carácter mediterráneo.",
+    },
+
+    {
+      key: "grecia",
+      image: "../media/images/grecia.jpg",
+      alt: "Pueblo blanco en una isla griega",
+      title: "Islas Griegas",
+      meta: "8 noches · salida desde Valencia",
+      text: "Ruta: Santorini · Mykonos · Creta · Rodas. Cúpulas azules, casas blancas y atardeceres sobre el mar Egeo.",
+    },
+
+    {
+      key: "tanger",
+      image: "../media/images/tanger.jpg",
+      alt: "Playa cercana a Tánger",
+      title: "Puerta a Tánger",
+      meta: "4 noches · salida desde Málaga",
+      text: "Ruta: Tánger · Tetuán. Fusión perfecta entre el Mediterráneo y la cultura del norte de África.",
+    },
+
+    {
+      key: "caribe",
+      image: "../media/images/caribe.jpg",
+      alt: "Isla tropical en el Caribe",
+      title: "Sueño Caribeño",
+      meta: "10 noches · vuelo + crucero",
+      text: "Ruta: República Dominicana · Bahamas · Jamaica. Playas de arena blanca, palmeras infinitas y aguas turquesa irreales.",
+    },
+
+    {
+      key: "mediterraneoClasico",
+      image: "../media/images/europa3.jpg",
+      alt: "Costa mediterránea al atardecer",
+      title: "Mediterráneo Clásico",
+      meta: "7 noches · salida desde Barcelona",
+      text: "Ruta: Barcelona · Civitavecchia (Roma) · Nápoles · Palermo. Historia, gastronomía y ciudades icónicas del Mediterráneo.",
+    },
+    {
+      key: "canariasMadeira",
+      image: "../media/images/africa2.jpg",
+      alt: "Acantilado volcánico en una isla atlántica",
+      title: "Islas Canarias y Madeira",
+      meta: "9 noches · salida desde Cádiz",
+      text: "Ruta: Lanzarote · Las Palmas · Tenerife · Funchal. Sol de invierno, paisajes volcánicos y bosques de laurisilva.",
+    },
+    {
+      key: "capitalesBalticas",
+      image: "../media/images/europa5.jpg",
+      alt: "Ciudad histórica a orillas del mar Báltico",
+      title: "Capitales Bálticas",
+      meta: "8 noches · vuelo + crucero",
+      text: "Ruta: Estocolmo · Helsinki · Tallin · Riga. Arquitectura imperial, barrios históricos y cultura nórdica junto al Báltico.",
+    },
+    {
+      key: "norteEuropa",
+      image: "../media/images/europa2.jpg",
+      alt: "Paisaje del norte de Europa con montañas y mar",
+      title: "Norte de Europa",
+      meta: "10 noches · salida desde Ámsterdam",
+      text: "Ruta: Ámsterdam · Brujas · Hamburgo · Oslo. Ciudades portuarias llenas de historia y canales que miran al mar del Norte.",
+    },
+    {
+      key: "adriatico",
+      image: "../media/images/europa4.jpg",
+      alt: "Ciudad amurallada frente al mar Adriático",
+      title: "Adriático y Dubrovnik",
+      meta: "7 noches · salida desde Venecia",
+      text: "Ruta: Split · Hvar · Kotor · Dubrovnik. Murallas sobre el mar, calas escondidas y pequeñas ciudades de piedra.",
+    },
+    {
+      key: "egiptoNilo",
+      image: "../media/images/africa4.jpg",
+      alt: "Templos junto al río en un paisaje desértico",
+      title: "Egipto y Nilo",
+      meta: "9 noches · vuelo + crucero fluvial",
+      text: "Ruta: El Cairo · Luxor · Asuán. Templos milenarios, navegación por el Nilo y amaneceres entre desiertos y palmerales.",
+    },
+    {
+      key: "japonCorea",
+      image: "../media/images/asia3.jpg",
+      alt: "Ciudad costera iluminada en Asia",
+      title: "Japón y Corea en el mar",
+      meta: "12 noches · vuelo + crucero",
+      text: "Ruta: Tokio · Osaka · Busan · Jeju. Ciudades futuristas, templos tradicionales y puertos llenos de neones frente al Pacífico.",
+    },
+    {
+      key: "auroras",
+      image: "../media/images/europa6.jpg",
+      alt: "Paisaje ártico con auroras boreales",
+      title: "Auroras en el Ártico",
+      meta: "11 noches · salida desde Tromsø",
+      text: "Ruta: Tromsø · Alta · Honningsvåg · islas Lofoten. Navegación polar, noches boreales y pequeños pueblos pesqueros.",
+    },
+    {
+      key: "atlanticoSur",
+      image: "../media/images/america3.jpg",
+      alt: "Costa atlántica con acantilados y océano",
+      title: "Atlántico Sur y Lisboa",
+      meta: "8 noches · salida desde Lisboa",
+      text: "Ruta: Lisboa · Madeira · Tenerife · Lanzarote. Ciudades atlánticas con miradores infinitos y clima suave todo el año.",
+    },
+  ];
