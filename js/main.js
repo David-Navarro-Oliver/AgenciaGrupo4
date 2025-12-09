@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("scroll", handleScroll);
   }
 
-    const video = document.getElementById("hero-video");
+  const video = document.getElementById("hero-video");
   const overlay = document.getElementById("hero-overlay");
   const playButton = document.getElementById("hero-play-button");
 
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-   const shells = document.querySelectorAll(".continent-gallery-shell");
+  const shells = document.querySelectorAll(".continent-gallery-shell");
 
   shells.forEach((shell) => {
     const gallery = shell.querySelector(".continent-gallery");
@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (!isDown) return;
       e.preventDefault();
       const x = e.pageX - gallery.offsetLeft;
-      const walk = (x - startX) * 1.2; 
+      const walk = (x - startX) * 1.2;
       gallery.scrollLeft = startScrollLeft - walk;
     });
 
@@ -131,3 +131,59 @@ document.addEventListener("DOMContentLoaded", () => {
       { passive: true }
     );
   });
+
+  const testimonialSlider = document.querySelector(".testimonials-slider");
+  const testimonialSlides = testimonialSlider
+    ? Array.from(testimonialSlider.querySelectorAll(".testimonial-slide"))
+    : [];
+
+  const prevTestimonialBtn = document.querySelector(
+    ".testimonials-arrow--prev"
+  );
+  const nextTestimonialBtn = document.querySelector(
+    ".testimonials-arrow--next"
+  );
+
+  if (
+    testimonialSlider &&
+    testimonialSlides.length > 0 &&
+    prevTestimonialBtn &&
+    nextTestimonialBtn
+  ) {
+    let currentTestimonial = 0;
+
+    function goToTestimonial(newIndex) {
+      const total = testimonialSlides.length;
+      const nextIndex = ((newIndex % total) + total) % total;
+
+      if (nextIndex === currentTestimonial) return;
+
+      const currentSlide = testimonialSlides[currentTestimonial];
+      const nextSlide = testimonialSlides[nextIndex];
+
+      currentSlide.classList.remove("is-active");
+      currentSlide.classList.add("is-prev");
+
+      nextSlide.classList.remove("is-prev");
+
+      void nextSlide.offsetWidth;
+
+      nextSlide.classList.add("is-active");
+
+      currentTestimonial = nextIndex;
+    }
+
+    prevTestimonialBtn.addEventListener("click", () => {
+      goToTestimonial(currentTestimonial - 1);
+    });
+
+    nextTestimonialBtn.addEventListener("click", () => {
+      goToTestimonial(currentTestimonial + 1);
+    });
+
+    testimonialSlides.forEach((slide, index) => {
+      slide.classList.toggle("is-active", index === 0);
+      slide.classList.remove("is-prev");
+    });
+  }
+});
