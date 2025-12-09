@@ -77,3 +77,57 @@ document.addEventListener("DOMContentLoaded", () => {
         });
       });
     }
+
+    let isDown = false;
+    let startX = 0;
+    let startScrollLeft = 0;
+
+    gallery.addEventListener("mousedown", (e) => {
+      isDown = true;
+      gallery.classList.add("is-dragging");
+      startX = e.pageX - gallery.offsetLeft;
+      startScrollLeft = gallery.scrollLeft;
+    });
+
+    gallery.addEventListener("mouseleave", () => {
+      isDown = false;
+      gallery.classList.remove("is-dragging");
+    });
+
+    gallery.addEventListener("mouseup", () => {
+      isDown = false;
+      gallery.classList.remove("is-dragging");
+    });
+
+    gallery.addEventListener("mousemove", (e) => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - gallery.offsetLeft;
+      const walk = (x - startX) * 1.2; 
+      gallery.scrollLeft = startScrollLeft - walk;
+    });
+
+    let touchStartX = 0;
+    let touchStartScrollLeft = 0;
+
+    gallery.addEventListener(
+      "touchstart",
+      (e) => {
+        const touch = e.touches[0];
+        touchStartX = touch.pageX - gallery.offsetLeft;
+        touchStartScrollLeft = gallery.scrollLeft;
+      },
+      { passive: true }
+    );
+
+    gallery.addEventListener(
+      "touchmove",
+      (e) => {
+        const touch = e.touches[0];
+        const x = touch.pageX - gallery.offsetLeft;
+        const walk = (x - touchStartX) * 1.2;
+        gallery.scrollLeft = touchStartScrollLeft - walk;
+      },
+      { passive: true }
+    );
+  });
