@@ -220,16 +220,6 @@
   opacity: 1;
 }
 
-.site-header {
-  background: transparent;
-  box-shadow: none;
-}
-
-.site-header.scrolled {
-  background: transparent;
-  box-shadow: none;
-}
-
 .navbar {
   width: 100%;
   padding: 1rem 2rem;
