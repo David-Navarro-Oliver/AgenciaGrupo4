@@ -31,3 +31,14 @@ document.addEventListener("DOMContentLoaded", () => {
       video.currentTime = 0;
       video.play().catch(() => {});
     }
+
+    playButton.addEventListener("click", startIntro);
+
+    video.addEventListener("ended", () => {
+      video.src = loopSrc;
+      video.loop = true;
+      video.muted = true;
+      video.currentTime = 0;
+      video.play().catch(() => {});
+    });
+  }
