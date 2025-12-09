@@ -4,6 +4,12 @@
     padding: 0px;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
 main {
     margin: 50px;
 }
@@ -57,7 +63,7 @@ main {
 .citymini {
     font-size: 8pt;
     font-style: italic;
-    color:grey;
+    color: grey;
 }
 
 .telefonista {
@@ -67,4 +73,33 @@ main {
 
 #extra {
     text-align: center;
+    margin-bottom: 50px;
+}
+
+#redes {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#redesContact {
+    margin: auto auto;
+    width: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;  
+    justify-items: center; 
+    align-items: center; 
+}
+
+.redesIcons {
+    width: 50px;
+}
+
+.remarksText {
+    font-size: 12pt;
+    font-style: italic;
+    font-weight: bold;
+    border-bottom: dashed 1px grey;
+    width: 350px;
+    margin: auto auto;
 }
