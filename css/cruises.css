@@ -219,3 +219,13 @@
 .cruiseDestinationCard:hover::after {
   opacity: 1;
 }
+
+.site-header {
+  background: transparent;
+  box-shadow: none;
+}
+
+.site-header.scrolled {
+  background: transparent;
+  box-shadow: none;
+}
