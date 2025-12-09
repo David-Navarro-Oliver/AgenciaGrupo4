@@ -1,0 +1,92 @@
+.heroCruises {
+  width: 100%;
+  height: 70vh;
+  min-height: 480px;
+}
+
+.heroCruisesStage {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  perspective: 1200px;
+}
+
+.heroCruisesImage {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform-origin: center;
+}
+
+.heroBase {
+  z-index: 1;
+}
+
+.heroActive {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 120vh;
+  height: 120vh;
+  object-fit: cover;
+  z-index: 2;
+  display: none;
+  transform-origin: center;
+  transform: translate(-50%, -50%) scale(1);
+  border-radius: 50%;
+  overflow: hidden;
+  opacity: 0;
+  -webkit-mask-image: radial-gradient(
+    circle at center,
+    rgba(0, 0, 0, 1) 18%,
+    rgba(0, 0, 0, 0) 92%
+  );
+  mask-image: radial-gradient(
+    circle at center,
+    rgba(0, 0, 0, 1) 18%,
+    rgba(0, 0, 0, 0) 92%
+  );
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+.heroActive.is-animating {
+  animation: heroPortal 1.6s ease-in-out forwards;
+}
+
+@keyframes heroPortal {
+  0% {
+    transform: translate(-50%, -50%) scale(0.35);
+    opacity: 0;
+    filter: brightness(1.1) contrast(1.03);
+  }
+  15% {
+    opacity: 1;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.3);
+    filter: brightness(1.25) contrast(1.06);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(0.22);
+    opacity: 0;
+    filter: brightness(0.9) contrast(0.96) blur(0.8px);
+  }
+}
+
+.heroCruisesCaption {
+  position: absolute;
+  top: 5.5rem;
+  width: 100%;
+  text-align: center;
+  z-index: 3;
+}
+
+.heroCruisesTitle {
+  color: var(--color-white);
+  font-size: clamp(2.3rem, 4vw, 3.1rem);
+  text-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+}
