@@ -17,7 +17,7 @@ function displayData(json) {
 
 function createHotelCards({ id, name, country, city, category, rating, userRating, countRating, locationDescription, tags, price, image }) {
     return `
-    <div class="card">
+    <div class="cardHotels">
         <div>
             <img class="hotelImage" src=${jsonFilePathImages}/${image}>
         </div>

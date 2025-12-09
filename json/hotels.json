@@ -9,7 +9,7 @@
             "rating": "8.9",
             "userRating": "Excelente",
             "countRating": "6266",
-            "locationDescription": "a 100 metros de la playa",
+            "locationDescription": "a 100 metros de la playa.",
             "tags": [
                 {
                     "unchecked": [
@@ -39,7 +39,7 @@
             "rating": "8.8",
             "userRating": "Excelente",
             "countRating": "12034",
-            "locationDescription": "En la playa de la Barceloneta, frente al Puerto Olímpico",
+            "locationDescription": "En la playa de la Barceloneta, frente al Puerto Olímpico.",
             "tags": [
                 {
                     "unchecked": [
@@ -70,7 +70,7 @@
             "rating": "8.4",
             "userRating": "Muy bueno",
             "countRating": "18425",
-            "locationDescription": "Edificio emblemático en la playa de la Barceloneta, con vistas al Mediterráneo",
+            "locationDescription": "Edificio emblemático en la playa de la Barceloneta, con vistas al Mediterráneo.",
             "tags": [
                 {
                     "unchecked": [
@@ -100,7 +100,7 @@
             "rating": "9.1",
             "userRating": "Excelente",
             "countRating": "11000",
-            "locationDescription": "Frente al Paseo de la Malagueta, junto a la playa y cerca del centro histórico",
+            "locationDescription": "Frente al Paseo de la Malagueta, junto a la playa y cerca del centro histórico.",
             "tags": [
                 {
                     "unchecked": [
@@ -130,7 +130,7 @@
             "rating": "9.2",
             "userRating": "Excelente",
             "countRating": "7800",
-            "locationDescription": "Junto a la Universidad y cerca del Real Alcázar y la Catedral de Sevilla",
+            "locationDescription": "Junto a la Universidad y cerca del Real Alcázar y la Catedral de Sevilla.",
             "tags": [
                 {
                     "unchecked": [
@@ -160,7 +160,7 @@
             "rating": "9.0",
             "userRating": "Excelente",
             "countRating": "9500",
-            "locationDescription": "Ubicado en la Plaza del Obradoiro, contiguo a la Catedral de Santiago",
+            "locationDescription": "Ubicado en la Plaza del Obradoiro, contiguo a la Catedral de Santiago.",
             "tags": [
                 {
                     "unchecked": [
@@ -190,7 +190,7 @@
             "rating": "8.4",
             "userRating": "Muy bueno",
             "countRating": "310",
-            "locationDescription": "A pocos kilómetros de Santiago de Compostela, entorno tranquilo",
+            "locationDescription": "A pocos kilómetros de Santiago de Compostela, entorno tranquilo.",
             "tags": [
                 {
                     "unchecked": [
@@ -220,7 +220,7 @@
             "rating": "9.1",
             "userRating": "Excelente",
             "countRating": "500",
-            "locationDescription": "Zona céntrica de Lugo, con buena conexión a servicios y transportes",
+            "locationDescription": "Zona céntrica de Lugo, con buena conexión a servicios y transportes.",
             "tags": [
                 {
                     "unchecked": [
@@ -249,7 +249,7 @@
             "rating": "8.7",
             "userRating": "Muy bueno",
             "countRating": "900",
-            "locationDescription": "En un entorno histórico, torre antigua restaurada con acceso a naturaleza",
+            "locationDescription": "En un entorno histórico, torre antigua restaurada con acceso a naturaleza.",
             "tags": [
                 {
                     "unchecked": [
@@ -279,7 +279,7 @@
             "rating": "8.2",
             "userRating": "Bueno",
             "countRating": "3500",
-            "locationDescription": "Ubicado en zona céntrica de Benidorm, a pocos minutos de la playa de Levante",
+            "locationDescription": "Ubicado en zona céntrica de Benidorm, a pocos minutos de la playa de Levante.",
             "tags": [
                 {
                     "unchecked": [
@@ -308,7 +308,7 @@
             "rating": "7.5",
             "userRating": "Bien",
             "countRating": "600",
-            "locationDescription": "Zona céntrica / urbana, cerca de comercios y transporte público",
+            "locationDescription": "Zona céntrica / urbana, cerca de comercios y transporte público.",
             "tags": [
                 {
                     "unchecked": [
@@ -336,7 +336,7 @@
             "rating": "8.0",
             "userRating": "Muy bien",
             "countRating": "1000+",
-            "locationDescription": "en Montmartre, a pocos minutos del Moulin Rouge y Sacré-Cœur",
+            "locationDescription": "en Montmartre, a pocos minutos del Moulin Rouge y Sacré-Cœur.",
             "tags": [
                 {
                     "unchecked": [
@@ -365,7 +365,7 @@
             "rating": "9.2",
             "userRating": "Excelente",
             "countRating": "3000+",
-            "locationDescription": "en el barrio de Trastevere, cerca de la Piazza Santa Maria",
+            "locationDescription": "en el barrio de Trastevere, cerca de la Piazza Santa Maria.",
             "tags": [
                 {
                     "unchecked": [
@@ -394,7 +394,7 @@
             "rating": "8.8",
             "userRating": "Muy bueno",
             "countRating": "4000+",
-            "locationDescription": "a orillas del Gran Canal, cerca de la estación Santa Lucia",
+            "locationDescription": "a orillas del Gran Canal, cerca de la estación Santa Lucia.",
             "tags": [
                 {
                     "unchecked": [
@@ -423,7 +423,7 @@
             "rating": "7.6",
             "userRating": "Bien",
             "countRating": "2000+",
-            "locationDescription": "diseño boutique, en un barrio céntrico con fácil acceso al transporte",
+            "locationDescription": "diseño boutique, en un barrio céntrico con fácil acceso al transporte.",
             "tags": [
                 {
                     "unchecked": [
@@ -452,7 +452,7 @@
             "rating": "7.8",
             "userRating": "Bueno",
             "countRating": "2500+",
-            "locationDescription": "en el barrio de Chiado, muy cerca de Barrio Alto y Baixa",
+            "locationDescription": "en el barrio de Chiado, muy cerca de Barrio Alto y Baixa.",
             "tags": [
                 {
                     "unchecked": [
@@ -481,7 +481,7 @@
             "rating": "8.7",
             "userRating": "Muy bien",
             "countRating": "5000+",
-            "locationDescription": "resort clásico con vistas a las pirámides de Giza, situado a los pies de las pirámides",
+            "locationDescription": "resort clásico con vistas a las pirámides de Giza, situado a los pies de las pirámides.",
             "tags": [
                 {
                     "unchecked": [
@@ -510,7 +510,7 @@
             "rating": "9.0",
             "userRating": "Excelente",
             "countRating": "4200+",
-            "locationDescription": "hotel histórico reconvertido desde la antigua cárcel Charles Street, en Beacon Hill, cerca de Boston Common",
+            "locationDescription": "hotel histórico reconvertido desde la antigua cárcel Charles Street, en Beacon Hill, cerca de Boston Common.",
             "tags": [
                 {
                     "unchecked": [
@@ -539,7 +539,7 @@
             "rating": "9.4",
             "userRating": "Excelente",
             "countRating": "8000+",
-            "locationDescription": "palacete de lujo en Recoleta, a pasos de avenidas y museos emblemáticos",
+            "locationDescription": "palacete de lujo en Recoleta, a pasos de avenidas y museos emblemáticos.",
             "tags": [
                 {
                     "unchecked": [
@@ -568,7 +568,7 @@
             "rating": "8.6",
             "userRating": "Muy bien",
             "countRating": "2200+",
-            "locationDescription": "hotel de estilo moderno-japonés con jardines interiores, cerca de la zona de Suidobashi / Tokyo Dome",
+            "locationDescription": "hotel de estilo moderno-japonés con jardines interiores, cerca de la zona de Suidobashi / Tokyo Dome.",
             "tags": [
                 {
                     "unchecked": [
@@ -597,7 +597,7 @@
             "rating": "9.3",
             "userRating": "Excelente",
             "countRating": "3000+",
-            "locationDescription": "hotel clásico de lujo con vistas al lago de Zúrich y a los Alpes, ubicado en un parque privado",
+            "locationDescription": "hotel clásico de lujo con vistas al lago de Zúrich y a los Alpes, ubicado en un parque privado.",
             "tags": [
                 {
                     "unchecked": [

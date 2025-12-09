@@ -7,7 +7,7 @@
 #hotelCards {
     margin: 30px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
 }
@@ -19,25 +19,29 @@
     gap: 50px;
 }
 
-.card {
+.cardHotels {
     width: 350px;
-    padding: 10px;
+    padding: 15px;
     box-shadow: 10px 10px 5px lightgray;
-    background-color: lightcyan;
     border-width: 0px 0px 10px 0px;
     border-color: cadetblue;
     border-style: solid;
     border-radius: 0px 0px 5px 5px;
     gap: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    background-image: url(../media/images/hotels/texturaPintura.png);
+    background-blend-mode: lighten;
+    background-size: cover;
 }
 
 .description {
+    width: 300px;
     display: inline-flex;
     vertical-align: middle;
 }
 
 .hotelImage {
-    width: 350px;
+    width: 100%;
 }
 
 .hotelName {
@@ -68,7 +72,7 @@
 }
 
 .description {
-    width: 350px;
+    width: 310px;
     margin-top: 5px;
 }
 
@@ -87,12 +91,12 @@
     font-weight: bold;
 }
 
-.hotelLocation{
+.hotelLocation {
     width: auto;
 }
 
 nav {
-    width: 80%;
+    width: 85%;
     display: inline-flex;
     justify-content: flex-end;
     margin: 30px 30px 0px 30px;
