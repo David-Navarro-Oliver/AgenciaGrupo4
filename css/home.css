@@ -491,3 +491,87 @@ main {
   outline: 2px solid var(--color-accent);
   outline-offset: 2px;
 }
+@media (max-width: 900px) {
+  .navbar {
+    padding-inline: 1.4rem;
+  }
+
+  .nav-logo-image {
+    height: 70px;
+  }
+
+  .hero-overlay {
+    align-items: flex-start;
+    padding-inline: 1.5rem;
+  }
+
+  .hero-subtitle {
+    max-width: 100%;
+  }
+
+  .memories-layout {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .memories-mainPhoto {
+    flex: 1 1 auto;
+    max-width: none;
+  }
+
+  .memories-overlayPhoto {
+    position: relative;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    margin-top: 2rem;
+  }
+
+  .world-section {
+    padding: 3.5rem 0 3rem;
+    margin-top: 1.8rem;
+  }
+
+  .world-header {
+    padding-inline: 1.5rem;
+    margin-bottom: 2.8rem;
+  }
+
+  .world-intro {
+    padding-inline: 0.5rem;
+  }
+
+  .world-container {
+    gap: 4rem;
+  }
+
+  .continent-row {
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 1.5rem;
+    gap: 2.4rem;
+  }
+
+  .continent-row--left .continent-text,
+  .continent-row--right .continent-text {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+    max-width: 100%;
+    flex: 1 1 auto;
+  }
+
+  .continent-row--left .continent-gallery-shell,
+  .continent-row--right .continent-gallery-shell {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .continent-gallery-shell {
+    width: 100%;
+  }
+
+  .continent-gallery img {
+    height: 260px;
+  }
+}
