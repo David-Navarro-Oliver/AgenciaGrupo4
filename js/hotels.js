@@ -77,7 +77,7 @@ function sort(jsonData, filter) {
     displayMessage(filter);
     setTimeout(function () {
         displayData(result);
-        removeAlerts();
+        removeMessage();
     }, 2000);
 }
 
@@ -91,7 +91,7 @@ function displayMessage(filter) {
     body.appendChild(node);
 }
 
-function removeAlerts() {
+function removeMessage() {
     document.getElementsByClassName("message")[0].remove();
 }
 
