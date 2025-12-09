@@ -289,3 +289,20 @@
   .cruiseDestinationsGrid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .nav-logo-image {
+    height: 64px;
+  }
+
+  .navbar {
+    padding-inline: 1.5rem;
+  }
+
+  .travelHoldButton {
+    top: 65%;
+  }
+
+  .cruiseDestinationImageWrapper {
+    height: 220px;
+  }
+}
