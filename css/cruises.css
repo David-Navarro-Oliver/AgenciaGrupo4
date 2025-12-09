@@ -306,3 +306,13 @@
     height: 220px;
   }
 }
+
+@media (max-width: 600px) {
+  .cruiseDestinationsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .cruiseDestinationImageWrapper {
+    height: 210px;
+  }
+}
