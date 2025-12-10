@@ -12,11 +12,51 @@
 </head>
 
 <body>
-    <!-- HEADER EXTERNO 
-    <my-header></my-header>
-    -->
-    
-    <!--  HOTELS PAGE -->
+    <header class="site-header">
+        <div class="navbar">
+            <div class="navbarBrand">
+                <div class="nav-logo">
+                    <img src="../media/images/logoVerticeTravel.png" alt="Vértice Travel" class="nav-logo-image" />
+                </div>
+            </div>
+
+            <button class="nav-toggle" aria-label="Abrir menú">
+                <span></span><span></span><span></span>
+            </button>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="cruises.html" class="is-active">Cruceros</a></li>
+                    <li><a href="#">Viajes</a></li>
+                    <li><a href="#">Vuelos</a></li>
+                    <li><a href="#">Hoteles</a></li>
+                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Sobre nosotros</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main id="hotelsMain">
+        <section class="world-section" id="world-section">
+            <div class="world-header">
+                <span class="world-eyebrow">Descubre nuestros hoteles</span>
+                <h2 class="world-title">
+                    Estancias únicas en los destinos más inspiradores
+                 </h2>
+                <p class="world-intro">
+                    En Vértice Travel seleccionamos hoteles que combinan ubicación, confort y autenticidad para que cada
+                    viaje sea una experiencia completa. Desde alojamientos boutique con encanto local hasta resorts de
+                    lujo frente al mar, te ofrecemos opciones para todos los estilos de viajero. Tú eliges el destino;
+                    nosotros encontramos el lugar perfecto para que te sientas como en casa.
+                </p>
+            </div>
+        </section>
+    </main>
+
     <nav>
         <div class="navElement text" title="ordenar por..."><i>Filtros:</i></div>
         <div class="navElement main"><img class="icons" src="../media/images/hotels/iconBarGraph.svg"
@@ -32,26 +72,32 @@
         <div class="navElement" onclick="jsonSortingCards('comentarios')"><img class="icons"
                 src="../media/images/hotels/iconComentaries.svg" title="comentarios"></div>
     </nav>
+
+
     <div id="hotelCards">
     </div>
 
     <footer class="site-footer">
         <div class="container footer-grid">
             <div class="footer-brand">
-                <img src="../media/images/footer.png" alt="Vértice Travel" class="footerLogo" />
+                <img src="../media/images/logoVerticeTravelDorado.png" alt="Vértice Travel" class="footerLogo" />
                 <p>
                     Viajes y experiencias diseñadas al detalle desde España hacia los
-                    destinos más extraordinarios del planeta: cruceros, grandes vuelos
-                    y escapadas únicas.
+                    destinos más extraordinarios del planeta: cruceros, grandes vuelos y
+                    escapadas únicas.
                 </p>
             </div>
+
             <div class="footerColumn">
                 <h3 class="footerTitle">Contacto</h3>
                 <ul class="footer-links">
-                    <li><a href="mailto:hola@verticetravel.com">hola@verticetravel.com</a></li>
+                    <li>
+                        <a href="mailto:hola@verticetravel.com">hola@verticetravel.com</a>
+                    </li>
                     <li><a href="tel:+34900000123">+34 900 000 123</a></li>
                 </ul>
             </div>
+
             <div class="footerColumn">
                 <h3 class="footerTitle">Vértice Travel</h3>
                 <ul class="footer-links">
@@ -59,6 +105,7 @@
                     <li><a href="#equipo">Nuestro equipo</a></li>
                 </ul>
             </div>
+
             <div class="footerColumn">
                 <h3 class="footerTitle">Síguenos</h3>
                 <ul class="footer-links">
@@ -75,14 +122,11 @@
                 </ul>
             </div>
         </div>
+
         <div class="container footer-bottom">
             <p>© 2025 Vértice Travel. Todos los derechos reservados.</p>
         </div>
     </footer>
-
-    <!-- FOOTER EXTERNO 
-    <my-footer></my-footer> 
-    -->
 </body>
 
 </html>
