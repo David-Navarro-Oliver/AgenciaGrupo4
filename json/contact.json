@@ -2,7 +2,7 @@
     "contact": [
         {
             "id": 0,
-            "department": "Informacion Vertice",
+            "department": "Información Vértice",
             "responsible": "Tony Jiménez",
             "opening": "Lunes a Viernes, de 9 a 17",
             "city": "Alicante",
@@ -15,11 +15,11 @@
         },
         {
             "id": 1,
-            "department": "Agencia de seguros Vertice",
+            "department": "Agencia de seguros Vértice",
             "responsible": "Andrea Perlini",
             "opening": "Lunes a Jueves, de 9 a 13",
             "city": "Barcelona",
-            "address": "Calle Aragon, nº 43, 1ªB",
+            "address": "Calle Aragón, nº 43, 1ªB",
             "image": {
                 "path": "map2.png",
                 "alt": "imagen de mapa Barcelona",
@@ -28,7 +28,7 @@
         },
         {
             "id": 2,
-            "department": "Viajes organizados Vertice",
+            "department": "Viajes organizados Vértice",
             "responsible": "Alejandra Gómez",
             "opening": "Lunes a Viernes, de 9 a 17",
             "city": "Ourense",
