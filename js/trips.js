@@ -17,3 +17,16 @@ document.addEventListener("DOMContentLoaded", () => {
       priceFrom: "3.200 €",
       tags: ["En pareja", "Cultura", "Trenes bala"],
     },
+    {
+      id: "costa-oeste-familia",
+      type: ["familia", "aventura", "larga-distancia"],
+      title: "Costa Oeste en familia",
+      image: "../media/images/america3.jpg",
+      alt: "Carretera junto a un lago entre montañas",
+      location: "San Francisco · Yosemite · Los Ángeles",
+      duration: "14 días · 11 noches",
+      description:
+        "Ruta flexible en coche con niños: parques nacionales, ciudades icónicas y tiempo para disfrutar sin prisas.",
+      priceFrom: "2.850 €",
+      tags: ["En familia", "Roadtrip", "Parques nacionales"],
+    },
