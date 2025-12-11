@@ -1,0 +1,26 @@
+{
+  "trips": [
+    {
+      "id": 1,
+      "title": "Toscana con encanto",
+      "subtitle": "Ruta suave en coche de alquiler entre pueblos, viñedos y hoteles con historia.",
+      "region": "Europa",
+      "duration": "8 días",
+      "type": ["pareja"],
+      "mood": ["Gastronomía", "Vino", "Paisaje"],
+      "image": "../media/images/europa13.jpg",
+      "priceFrom": "1.450 €",
+      "note": "Ideal como primera gran escapada romántica por Italia."
+    },
+    {
+      "id": 2,
+      "title": "Costa Rica en familia",
+      "subtitle": "Naturaleza, fauna y actividades pensadas para viajar con niños sin estrés.",
+      "region": "América",
+      "duration": "12 días",
+      "type": ["familia", "aventura", "larga-distancia"],
+      "mood": ["Selva", "Animales", "Aventura suave"],
+      "image": "../media/images/america9.jpg",
+      "priceFrom": "3.200 €",
+      "note": "Traslados privados y hoteles adaptados a familias con peques."
+    },
