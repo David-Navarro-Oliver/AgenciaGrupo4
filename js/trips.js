@@ -161,3 +161,30 @@ document.addEventListener("DOMContentLoaded", () => {
       tags: ["Luna de miel", "Bienestar", "Naturaleza"],
     },
   ];
+
+  function renderTrips(filter = "todos") {
+    if (!tripGrid) return;
+
+    let filtered = trips;
+
+    if (filter !== "todos") {
+      filtered = trips.filter((trip) => trip.type.includes(filter));
+    }
+
+    const html = filtered
+      .map(
+        (trip) => `
+      <li class="trip-card">
+        <figure class="trip-card-imageWrapper">
+          <img src="${trip.image}" alt="${trip.alt}" class="trip-card-image" />
+        </figure>
+
+        <div class="trip-card-body">
+          <div class="trip-card-main">
+            <h3 class="trip-card-title">${trip.title}</h3>
+            <p class="trip-card-location">${trip.location}</p>
+            <p class="trip-card-meta">${trip.duration}</p>
+            <p class="trip-card-description">
+              ${trip.description}
+            </p>
+          </div>
