@@ -1,7 +1,261 @@
-.site-header {
-  position: sticky;
+/* Página de Ofertas - estilos específicos
+   Usa la paleta y tipografías de base.css pero con un look propio
+*/
+
+.oferts-page {
+  padding-top: 6rem; /* deja hueco bajo el header fijo */
+  background-color: var(--color-bg-page);
 }
 
-table, tr, td, th{
-  border: 2px solid black;
+/* ------------------ HERO ------------------ */
+
+.oferts-hero {
+  padding: 3.5rem 0 3rem;
+  background: radial-gradient(circle at top left, #0f5c63 0, #09141f 50%, #050c14 100%);
+  color: var(--color-white);
+}
+
+.oferts-hero-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1.4fr);
+  gap: 2.5rem;
+  align-items: flex-start;
+}
+
+.oferts-eyebrow {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--color-accent);
+}
+
+.oferts-hero-title {
+  margin-top: 0.6rem;
+  font-size: clamp(2.1rem, 3.3vw, 2.7rem);
+  line-height: 1.2;
+}
+
+.oferts-hero-subtitle {
+  margin-top: 0.9rem;
+  font-size: 0.98rem;
+  max-width: 40rem;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.oferts-hero-bullets {
+  margin-top: 1.2rem;
+  padding-left: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.oferts-hero-aside {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.oferts-tag {
+  align-self: flex-start;
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid rgba(230, 179, 92, 0.5);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+}
+
+.oferts-hero-box {
+  background: rgba(5, 12, 20, 0.82);
+  border-radius: 1rem;
+  padding: 1.3rem 1.4rem;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(230, 179, 92, 0.18);
+}
+
+.oferts-hero-box-title {
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  margin-bottom: 0.5rem;
+}
+
+.oferts-hero-box-text {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.oferts-hero-box-text + .oferts-hero-box-text {
+  margin-top: 0.5rem;
+}
+
+/* ------------------ INTRO ------------------ */
+
+.oferts-intro {
+  background-color: var(--color-bg-page);
+  padding-top: 2.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.oferts-intro-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.8fr) minmax(0, 1.2fr);
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.oferts-intro-layout h2 {
+  margin-bottom: 0.7rem;
+}
+
+.oferts-intro-layout p {
+  font-size: 0.96rem;
+}
+
+.oferts-intro-note {
+  padding: 1rem 1.2rem;
+  border-radius: 0.9rem;
+  background: #fffaf2;
+  border: 1px solid rgba(230, 179, 92, 0.35);
+  font-size: 0.9rem;
+}
+
+/* ------------------ TABLA ------------------ */
+
+.oferts-table-section {
+  padding-top: 1rem;
+  padding-bottom: 3.5rem;
+}
+
+.oferts-table-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.oferts-table-header h2 {
+  margin-top: 0.2rem;
+}
+
+.oferts-table-helper {
+  font-size: 0.9rem;
+  color: var(--color-text-soft);
+  max-width: 38rem;
+}
+
+.oferts-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  background: var(--color-white);
+  border-radius: 1rem;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(9, 20, 31, 0.06);
+}
+
+.oferts-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 640px;
+}
+
+.oferts-table th,
+.oferts-table td {
+  padding: 0.85rem 1.1rem;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.oferts-table thead {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+.oferts-table th {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.78rem;
+}
+
+.oferts-table tbody tr:nth-child(even) {
+  background-color: #f8f5ef;
+}
+
+.oferts-table tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.oferts-table tbody tr:hover {
+  background-color: var(--color-primary-soft);
+}
+
+.oferts-table td:nth-child(2) {
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+/* CTA inferior */
+
+.oferts-cta-row {
+  margin-top: 1.7rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 1.8rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.oferts-cta-row p {
+  max-width: 32rem;
+  font-size: 0.95rem;
+}
+
+.oferts-cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+/* ------------------ RESPONSIVE ------------------ */
+
+@media (max-width: 960px) {
+  .oferts-hero-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .oferts-hero-aside {
+    max-width: 28rem;
+  }
+
+  .oferts-intro-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .oferts-table {
+    min-width: 520px;
+  }
+}
+
+@media (max-width: 600px) {
+  .oferts-page {
+    padding-top: 5.5rem;
+  }
+
+  .oferts-hero {
+    padding-inline: 0.75rem;
+  }
+
+  .oferts-table-wrapper {
+    border-radius: 0.8rem;
+  }
+
+  .oferts-cta-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }

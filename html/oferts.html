@@ -39,18 +39,117 @@
     <header class="site-header">
       
     </header>
-    <main>
-      <table id="tablaOfertas">
-        <thead>
-          <tr>
-            <th>Destino</th>
-            <th>Precio persona (€)</th>
-            <th>Fecha inicio</th>
-            <th>Fecha fin</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
+        <main class="oferts-page">
+      <!-- HERO OFERTAS -->
+      <section class="oferts-hero">
+        <div class="container oferts-hero-layout">
+          <div class="oferts-hero-text">
+            <p class="oferts-eyebrow">Ofertas Vértice Travel</p>
+            <h1 class="oferts-hero-title">
+              Oportunidades únicas,<br />
+              solo por tiempo limitado
+            </h1>
+            <p class="oferts-hero-subtitle">
+              Selección de viajes con condiciones especiales: precios
+              rebajados, ventanas de venta concretas y plazas limitadas. Todas
+              las ofertas están actualizadas y se revisan de forma periódica.
+            </p>
+            <ul class="oferts-hero-bullets">
+              <li>Precios por persona, impuestos incluidos.</li>
+              <li>Fechas de inicio y fin claramente indicadas.</li>
+              <li>Algunas ofertas incluyen vuelo, otras solo servicios en destino.</li>
+            </ul>
+          </div>
+
+          <aside class="oferts-hero-aside">
+            <div class="oferts-tag">Solo por tiempo limitado</div>
+            <div class="oferts-hero-box">
+              <p class="oferts-hero-box-title">
+                ¿Cómo funcionan nuestras ofertas?
+              </p>
+              <p class="oferts-hero-box-text">
+                Cada promoción tiene unas fechas de vigencia y un número de
+                plazas limitado. Cuando una oferta se agota o expira, desaparece
+                automáticamente de la tabla.
+              </p>
+              <p class="oferts-hero-box-text">
+                Si tienes dudas sobre disponibilidad, combinaciones con otros
+                destinos o quieres personalizar uno de estos viajes, nuestro
+                equipo puede prepararte una propuesta a medida a partir de la
+                oferta base.
+              </p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- INTRO / TEXTO EXPLICATIVO -->
+      <section class="section oferts-intro">
+        <div class="container oferts-intro-layout">
+          <div>
+            <h2>Encuentra tu próxima escapada al mejor precio</h2>
+            <p>
+              Utiliza la tabla de ofertas para localizar fácilmente el destino,
+              el rango de fechas y el precio que mejor encaja contigo. Puedes
+              ordenar la información desde el propio navegador o exportarla si
+              lo necesitas.
+            </p>
+          </div>
+          <div class="oferts-intro-note">
+            <p>
+              Recuerda que los precios indicados son orientativos y pueden
+              variar ligeramente en función de la disponibilidad real en el
+              momento de la reserva.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- TABLA DINÁMICA DE OFERTAS -->
+      <section class="section oferts-table-section">
+        <div class="container">
+          <header class="oferts-table-header">
+            <div>
+              <span class="oferts-eyebrow">Listado actualizado</span>
+              <h2>Ofertas activas actualmente</h2>
+            </div>
+            <p class="oferts-table-helper">
+              Ordena por destino, precio o fechas desde los controles del
+              navegador. Todas las filas se generan a partir del fichero JSON
+              de ofertas.
+            </p>
+          </header>
+
+          <div class="oferts-table-wrapper">
+            <table id="tablaOfertas" class="oferts-table">
+              <thead>
+                <tr>
+                  <th>Destino</th>
+                  <th>Precio persona (€)</th>
+                  <th>Fecha inicio</th>
+                  <th>Fecha fin</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+
+          <div class="oferts-cta-row">
+            <p>
+              ¿Te interesa alguna de estas ofertas pero quieres hacer ajustes
+              en fechas, noches o categoría de hotel?
+            </p>
+            <div class="oferts-cta-actions">
+              <a href="mailto:hola@verticetravel.com" class="btn btn-primary">
+                Consultar esta oferta
+              </a>
+              <a href="tel:+34900000123" class="btn btn-ghost">
+                Hablar con un asesor
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="site-footer">
       <div class="container footer-grid">
