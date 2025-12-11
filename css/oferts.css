@@ -1,17 +1,15 @@
-/* Página de Ofertas - estilos específicos
-   Usa la paleta y tipografías de base.css pero con un look propio
-*/
-
 .oferts-page {
-  padding-top: 6rem; /* deja hueco bajo el header fijo */
+  padding-top: 6rem;
   background-color: var(--color-bg-page);
 }
-
-/* ------------------ HERO ------------------ */
-
 .oferts-hero {
   padding: 3.5rem 0 3rem;
-  background: radial-gradient(circle at top left, #0f5c63 0, #09141f 50%, #050c14 100%);
+  background: radial-gradient(
+    circle at top left,
+    #0f5c63 0,
+    #09141f 50%,
+    #050c14 100%
+  );
   color: var(--color-white);
 }
 
@@ -92,9 +90,6 @@
 .oferts-hero-box-text + .oferts-hero-box-text {
   margin-top: 0.5rem;
 }
-
-/* ------------------ INTRO ------------------ */
-
 .oferts-intro {
   background-color: var(--color-bg-page);
   padding-top: 2.5rem;
@@ -123,9 +118,6 @@
   border: 1px solid rgba(230, 179, 92, 0.35);
   font-size: 0.9rem;
 }
-
-/* ------------------ TABLA ------------------ */
-
 .oferts-table-section {
   padding-top: 1rem;
   padding-bottom: 3.5rem;
@@ -198,9 +190,6 @@
   font-weight: 600;
   color: var(--color-primary);
 }
-
-/* CTA inferior */
-
 .oferts-cta-row {
   margin-top: 1.7rem;
   display: flex;
@@ -220,9 +209,6 @@
   flex-wrap: wrap;
   gap: 0.8rem;
 }
-
-/* ------------------ RESPONSIVE ------------------ */
-
 @media (max-width: 960px) {
   .oferts-hero-layout {
     grid-template-columns: 1fr;
