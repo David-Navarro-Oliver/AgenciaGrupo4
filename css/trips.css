@@ -242,3 +242,30 @@
 .trip-card-location span + span::before {
   content: " · ";
 }
+
+.trip-card-meta span + span::before {
+  content: " · ";
+}
+
+.trip-card-tags {
+  font-size: 0.8rem;
+  color: var(--color-text-soft);
+  margin-top: 0.45rem;
+}
+.trip-card-description {
+  font-size: 0.9rem;
+  color: var(--color-text-soft);
+  margin-top: 0.7rem;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.trips-note {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: var(--color-text-soft);
+  max-width: 46rem;
+}
