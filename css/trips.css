@@ -1,0 +1,31 @@
+.trips-page {
+  background-color: var(--color-bg-page);
+  min-height: 100vh;
+}
+.trips-intro {
+  padding-top: 7rem;
+  padding-bottom: 3.5rem;
+  position: relative;
+  background-image: url("../media/images/europa3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.trips-intro::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(246, 244, 240, 0.7);
+  z-index: 1;
+}
+.trips-intro > * {
+  position: relative;
+  z-index: 2;
+}
+
+.trips-intro-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(0, 1.1fr);
+  gap: 3rem;
+  align-items: flex-start;
+}
