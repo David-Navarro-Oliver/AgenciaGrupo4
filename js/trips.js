@@ -1,8 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const tripGrid = document.getElementById("tripGrid");
   const filterButtons = document.querySelectorAll(".trip-filter");
-
-  // DATOS DE VIAJES (PUEDES CAMBIAR TEXTOS E IMÁGENES)
   const trips = [
     {
       id: "japon-romantico",
@@ -191,9 +189,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
           <div class="trip-card-tags">
             ${trip.tags
-              .map(
-                (tag) => `<span class="trip-card-tag">${tag}</span>`
-              )
+              .map((tag) => `<span class="trip-card-tag">${tag}</span>`)
               .join("")}
           </div>
 
@@ -209,3 +205,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
     tripGrid.innerHTML = html;
   }
+  filterButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const filter = btn.dataset.filter || "todos";
+
+      filterButtons.forEach((b) => b.classList.remove("is-active"));
+      btn.classList.add("is-active");
+
+      renderTrips(filter);
+    });
+  });
+  renderTrips("todos");
+});
