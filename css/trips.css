@@ -99,3 +99,35 @@
 .trips-collection-header p {
   max-width: 38rem;
 }
+.trip-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  justify-content: flex-end;
+}
+
+.trip-filter {
+  border-radius: 999px;
+  padding: 0.5rem 0.9rem;
+  border: 1px solid rgba(15, 92, 99, 0.35);
+  background: #fffdf7;
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  cursor: pointer;
+  transition: background-color 0.18s ease, color 0.18s ease,
+    border-color 0.18s ease, box-shadow 0.18s ease;
+}
+
+.trip-filter:hover {
+  background-color: var(--color-primary-soft);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.trip-filter.is-active {
+  background-color: var(--color-primary);
+  color: #fff;
+  border-color: var(--color-primary);
+  box-shadow: 0 10px 26px rgba(15, 92, 99, 0.35);
+}
