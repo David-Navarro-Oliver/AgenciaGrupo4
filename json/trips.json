@@ -72,3 +72,27 @@
       "priceFrom": "3.400 €",
       "note": "Opciones de alojamientos boutique o lodges de lujo."
     },
+    {
+      "id": 7,
+      "title": "Nueva York & Caribe",
+      "subtitle": "Días de ciudad y compras seguidos de descanso en una playa de aguas turquesa.",
+      "region": "América",
+      "duration": "10 días",
+      "type": ["pareja", "familia", "larga-distancia"],
+      "mood": ["Ciudad", "Playa", "Contrastes"],
+      "image": "../media/images/caribe.jpg",
+      "priceFrom": "2.150 €",
+      "note": "Muy demandado como viaje de luna de miel."
+    },
+    {
+      "id": 8,
+      "title": "Fiordos en coche y ferry",
+      "subtitle": "Recorrido por Noruega combinando tramos en ferry y carretera panorámica.",
+      "region": "Europa",
+      "duration": "9 días",
+      "type": ["aventura", "pareja"],
+      "mood": ["Montañas", "Fiordos", "Clima fresco"],
+      "image": "../media/images/fiordos.jpg",
+      "priceFrom": "2.250 €",
+      "note": "Posibilidad de añadir noches en cabañas de madera frente al fiordo."
+    },
