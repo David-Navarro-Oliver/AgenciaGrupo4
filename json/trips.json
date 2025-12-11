@@ -48,3 +48,27 @@
       "priceFrom": "3.900 €",
       "note": "Posibilidad de añadir extensión a una isla tropical cercana."
     },
+    {
+      "id": 5,
+      "title": "Ruta por el Mediterráneo",
+      "subtitle": "Combinación de varias ciudades costeras europeas con vuelos cortos.",
+      "region": "Europa",
+      "duration": "7 días",
+      "type": ["pareja", "familia"],
+      "mood": ["Playas", "Ciudades", "Cultura"],
+      "image": "../media/images/europa4.jpg",
+      "priceFrom": "980 €",
+      "note": "Perfecto para viajar en primavera u otoño."
+    },
+    {
+      "id": 6,
+      "title": "Sudáfrica esencial",
+      "subtitle": "Ciudad del Cabo, Ruta Jardín y reserva privada para safari fotográfico.",
+      "region": "África",
+      "duration": "11 días",
+      "type": ["aventura", "larga-distancia"],
+      "mood": ["Safari", "Vinos", "Carretera"],
+      "image": "../media/images/africa19.jpg",
+      "priceFrom": "3.400 €",
+      "note": "Opciones de alojamientos boutique o lodges de lujo."
+    },
